@@ -1,0 +1,272 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: 'Bodoni Moda', serif;
+    background-color: white;
+}
+
+.content-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilos para las imágenes */
+img {
+    max-height: 200px; /* Ajusta el tamaño máximo de las imágenes */
+    width: auto; /* Mantiene proporciones */
+    height: auto; /* Mantiene proporciones */
+}
+
+/* Contenedor para las imágenes */
+.img-container {
+    display: flex; /* Muestra las imágenes en una sola línea */
+    align-items: center; /* Alinea las imágenes verticalmente */
+}
+
+.img-container img{
+    width: 200px;
+}
+
+.footer-content {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    flex-direction: column;
+    width: 60%;
+    overflow: hidden;
+}
+
+.img-container {
+    display: flex; /* Mostrar imágenes en línea */
+    align-items: center; /* Alinear imágenes verticalmente */
+}
+
+.img-container img {
+    margin-right: 5px; /* Espacio entre imágenes */
+}
+
+.img-container img:last-child {
+    margin-right: 0; /* Eliminar margen del último elemento */
+}
+
+.logo {
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    position: relative;
+}
+
+.ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.li-1, .li-2, .li-3, .li-4, .li-5, .li-6 {
+    display: inline-block;
+}
+
+.li-1 {
+    margin-right: 15px;
+    margin-left: 50px;
+}
+
+.li-2, .li-3 {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.li-4 {
+    margin-right: 150px;
+}
+
+.li-5 {
+    margin-right: 15px;
+    margin-left: 150px;
+    background-color: #007bff; /* Cambiado a azul */
+    padding: 10px;
+    color: white;
+}
+
+.li-6 {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 10px 20px; /* Simplificado */
+    border: 1px solid #ffffff; /* Se combinó en una línea */
+}
+
+/* Agrega estilos para el elemento 7 */
+.elemento-7 {
+    color: #ffffff; /* Cambia el color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 10px; /* Margen alrededor */
+}
+
+/* Agrega estilos para el elemento 8 */
+.elemento-8 {
+    background-color: #007bff; /* Cambiado a azul */
+    padding: 15px; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centrar texto */
+}
+
+h1 {
+    width: 290px;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    font-family: "Gowun Batang", serif;
+    font-weight: bold;
+}
+
+.p-1 {
+    text-align: center;
+    width: 440px;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.div-1 {
+    background-color: #ffffff;
+    display: inline-block;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+
+.div-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: inline-block;
+    padding: 10px 30px 10px 20px; /* Simplificado */
+}
+
+input {
+    border: none;
+}
+
+.p-2 {
+    display: inline-block;
+    font-family: 'Bodoni Moda', serif;
+    padding: 20px 50px; /* Simplificado */
+    background-color: #007bff; /* Cambiado a azul */
+    color: #ffffff;
+}
+
+footer {
+    margin-top: 300px;
+    padding-left: 270px;
+}
+
+.p-3 {
+    color: #ffffff;
+    font-family: 'Bodoni Moda', serif;
+}
+
+/* Animación para el desplazamiento de la imagen de fondo */
+@keyframes moveBackground {
+    0% {
+        background-position: 50% 50%; /* Posición centrada */
+    }
+    100% {
+        background-position: 150% 50%; /* Mover a la derecha */
+    }
+}
+
+/* Otros estilos ya existentes... */
+
+.img-container {
+    display: flex; /* Mostrar imágenes en línea */
+    width: calc(100% * 12); /* Asegúrate de que el contenedor ocupa el 100% del ancho */
+    animation: scroll 20s linear infinite; /* Animación infinita */
+    gap: 10px;
+}
+
+.carousel {
+    width: 60%;
+    overflow: hidden; /* Oculta imágenes fuera del contenedor */
+    position: relative; /* Para posicionar el contenedor */
+ 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Comienza desde el principio */
+    }
+    100% {
+        transform: translateX(calc(-200px * 6)); /* Desplazarse hacia la izquierda */
+    }
+}
+
+body {
+    background-color: #000000;
+    background-image: url(pexels-thisisengineering-3861958.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    
+}
+
+
+/* Estilo para las listas principales */
+.ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.ul li {
+    position: relative; /* Necesario para que el dropdown se posicione correctamente */
+}
+
+.ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilo para las listas desplegables */
+.dropdown {
+    display: none; /* Ocultar por defecto */
+    position: absolute; /* Posiciona el dropdown debajo de la opción principal */
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdown li {
+    padding: 5px 10px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.dropdown li:hover {
+    background-color: #f0f0f0; /* Cambiar el color al pasar el ratón por encima */
+}
+
+/* Mostrar el dropdown al pasar el ratón por encima */
+.ul li:hover .dropdown {
+    display: block;
+}
+
